@@ -68,7 +68,7 @@ def send():
         msg['From'] = sender
         msg['To'] = receiver
         msg['Subject'] = subject
-        # server.sendmail(sender, receiver, msg.as_string())
+        server.sendmail(sender, receiver, msg.as_string())
         server.quit()
         form.success("Your submit has been recorded!")
 
